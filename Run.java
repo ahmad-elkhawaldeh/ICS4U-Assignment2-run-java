@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
 * This is the calculating heating time program.
 */
-public class Run {
+final class Run {
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -28,10 +28,10 @@ public class Run {
     /**
     * This is the maxRun.
     *
-    * @param maxRun is good
+    * @param str is good
     * @return largestRun
     */
-    static int maxRun(String str) {
+    static int maxRun(final String str) {
         int largestRun = 1;
         int temp = 1;
 
@@ -54,7 +54,7 @@ public class Run {
     *
     * @param args No args will be used
     */
-    public static void main(String[] args) {
+    public static void main(String[] final args) {
         String inputString = null;
         System.out.print("Enter string : ");
         final Scanner scanner = new Scanner(System.in);
