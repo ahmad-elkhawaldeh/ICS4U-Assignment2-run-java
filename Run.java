@@ -25,20 +25,9 @@ final class Run {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
-    
-<<<<<<< HEAD
-=======
     /**
     * The starting main() function.
     *
-    * @param args No args will be used
-    */
-    public static void main(String[] final args) {
->>>>>>> c510731737dd6c2917ffe3857f1a6e6e52936e5e
-    /**
-    * The starting main() function.
-    *
-<<<<<<< HEAD
     * @param args No args will be used
     */
     public static void main(String[] final args) {
@@ -51,14 +40,6 @@ final class Run {
         static int maxRun(final String str) {
             int largestRun = 1;
             int temp = 1;
-=======
-    * @param str is good
-    * @return largestRun
-    */
-    static int maxRun(final String str) {
-        int largestRun = 1;
-        int temp = 1;
->>>>>>> c510731737dd6c2917ffe3857f1a6e6e52936e5e
 
             for (int word = 1; word < str.length(); word++) {
                 if (str.charAt(word) == str.charAt(word - 1)) {
