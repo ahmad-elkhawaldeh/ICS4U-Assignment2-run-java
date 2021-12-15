@@ -25,6 +25,13 @@ final class Run {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
+    
+    /**
+    * The starting main() function.
+    *
+    * @param args No args will be used
+    */
+    public static void main(String[] final args) {
     /**
     * This is the maxRun.
     *
@@ -49,12 +56,6 @@ final class Run {
         return largestRun;
     }
 
-    /**
-    * The starting main() function.
-    *
-    * @param args No args will be used
-    */
-    public static void main(String[] final args) {
         String inputString = null;
         System.out.print("Enter string : ");
         final Scanner scanner = new Scanner(System.in);
