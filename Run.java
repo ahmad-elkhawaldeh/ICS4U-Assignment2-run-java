@@ -25,36 +25,37 @@ final class Run {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
-    /**
-    * This is the maxRun.
-    *
-    * @param str is good
-    * @return largestRun
-    */
-    static int maxRun(final String str) {
-        int largestRun = 1;
-        int temp = 1;
-
-        for (int word = 1; word < str.length(); word++) {
-            if (str.charAt(word) == str.charAt(word - 1)) {
-                ++temp;
-            } else {
-                largestRun = Math.max(largestRun, temp);
-                temp = 1;
-            }
-        }
-
-        largestRun = Math.max(largestRun, temp);
-
-        return largestRun;
-    }
-
+    
     /**
     * The starting main() function.
     *
     * @param args No args will be used
     */
     public static void main(String[] final args) {
+        /**
+        * This is the maxRun.
+        *
+        * @param str is good
+        * @return largestRun
+        */
+        static int maxRun(final String str) {
+            int largestRun = 1;
+            int temp = 1;
+
+            for (int word = 1; word < str.length(); word++) {
+                if (str.charAt(word) == str.charAt(word - 1)) {
+                    ++temp;
+                } else {
+                    largestRun = Math.max(largestRun, temp);
+                    temp = 1;
+                }
+            }
+
+            largestRun = Math.max(largestRun, temp);
+
+            return largestRun;
+        }   
+
         String inputString = null;
         System.out.print("Enter string : ");
         final Scanner scanner = new Scanner(System.in);
