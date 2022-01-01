@@ -55,7 +55,7 @@ final class Run {
     *
     * @param args No args will be used
     */
-    public static void main(String[] args) {
+    public static void main(String[] final args) {
         String inputString = null;
         System.out.print("Enter string : ");
         final Scanner scanner = new Scanner(System.in);
